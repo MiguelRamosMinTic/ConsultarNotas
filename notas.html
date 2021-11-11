@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NOTAS</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="funciones.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>NOTAS</h1>
+    <h2 style="text-align: center; color: aliceblue;">INGRESO DATOS PARA SU NOTA</h2>
+    <hr>
+    <table class="default" style="margin: 0 auto; color: aliceblue;">
+        <tr>
+            <th>EMAIL</th>
+            <td><input type="text" id="emailNota"></td>
+        </tr>
+    </table>
+
+    <div style="text-align: center;"><input type="button" value="ENVIAR" onclick="consultarNota()"></div>
+    <hr>
+
+    <table class="default" style="margin: 0 auto; color: aliceblue;">
+        <tbody id="miResultadoNotas">
+
+        </tbody>
+    </table>
+
+    <br>
+
+    <table class="default" style="margin: 0 auto; color: aliceblue;">
+        <tbody id="miResultadoMensajes">
+
+        </tbody>
+    </table>
+
+    <hr>
+
+</body>
+
+</html>
